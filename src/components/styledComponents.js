@@ -44,7 +44,7 @@ export const StyledPriceTd = styled.td`
 `;
 
 export const StyledHeadRow = styled.tr`
-  background-color: ${COLORS.black};
+  background-color: ${COLORS.customGreen};
   color: ${COLORS.white};
 `;
 
