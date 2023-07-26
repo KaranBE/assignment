@@ -1,12 +1,12 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { Table } from "./Table";
+import Table from "./Table";
 import {
   ASSERT_ID,
   COLORS,
   COLUMN_NAMES,
   PRICE_ID,
   TICKER_ID,
-} from "./constants";
+} from "../constants";
 
 const testData = [
   {
@@ -128,7 +128,7 @@ describe("Table", () => {
       "false"
     );
     const mockGetSortByColumnName = jest.fn();
-    jest.mock("./utils", () => ({
+    jest.mock("../utils", () => ({
       getSortDataByColumnName: () => mockGetSortByColumnName,
     }));
     fireEvent.click(screen.getByTestId(PRICE_ID));

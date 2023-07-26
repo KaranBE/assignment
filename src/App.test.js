@@ -42,7 +42,7 @@ describe("App", () => {
     const pageHeading = screen.getByRole("heading");
     const table = screen.getByRole("table");
 
-    expect(pageHeading).toHaveTextContent("Financial App");
+    expect(pageHeading).toHaveTextContent("Finance App");
     expect(table).toBeVisible();
     expect(table).toHaveAttribute("aria-label", "Financial Details");
     expect(table).toMatchSnapshot();
